@@ -1,33 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--                                                                                                                                                                                                             
+    Modified from the Debian original for Ubuntu                                                                                                                                                                   
+    Last updated: 2014-03-19                                                                                                                                                                                       
+    See: https://launchpad.net/bugs/1288690                                                                                                                                                                        
+  -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Default Page: It Works</title>
+    <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <style type="text/css" media="screen"></style>
+    <script src="/js/index.js"></script>
   </head>
-  <body>
-    <nav class="nav-bar">
-      <div class="nav-wrapper">
-        <h1>Cynthia</h1>
-        <ul class="link-items">
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About</li>
+  <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="YelKdV2n"></script>
+    <header>
+      <div class="logo">Cynthia</div>
+      <div class="nav-list">
+      <div style="display: flex;">
+        <ul class="nav-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="/tweets.html">Tweets</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          
         </ul>
+        <div class="right">
+          <a href="https://twitter.com/intent/tweet?button_hashtag=share&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #share</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+        <div>
       </div>
-    </nav>
-    <main>
-      <div class="main-content-wrapper">
-        <h1>Welcome to my <span>website</span></h1>
-        <section class="bio-section">
-          <div class="bio-image"><img src="./images/cyn.jpeg"></img></div>
-          <p>Hello. My name is Cynthia. I love building stuff using HTML and CSS. I also love sing and dancing <button id="click-me">click me</button></p>
-        </section>
-      </div>
+      
+    </header>
+    <main class="main">
+      <article>
+        <div class="article-header"><h1>Welcome</h1></div>
+        <div class="intro">
+          <div class="card card-image">
+            <img
+              class="small"
+              id="smart_thumbnail"
+              src="/images/cyn.jpeg"
+              alt="mypicture"
+            />
+          </div>
+          <div class="card">
+            <h3 class="intro-h3">Hello,</h3>
+            <p>
+              My name is Cynthia Gaitho.
+I'm an undergrad at the Kiriri University, Kenya. I am curious about everything that goes on in my community, especially how people at the top make things the way the are.. 
+              <div class="readmore"><a href="/about.html"><button>About me</button></a></div>
+              
+            </p>
+          </div>
+        </div>
+        <div class="mission card">
+          <h3><span style="color:#683434">M</span>ission</h3>
+          <p>My mission in life is to solve real life and business problems.
+I am committed to exploring my full potential and helping those around me do same.</p>
+        </div>
+        <div class="values card">
+          <h2>Valu<span style="color:#683434">e</span>s ★</h2>
+          <h3>Commitment</h3>
+          <p>I believe that you need to make an effort in order to achieve anything. To <strong>succeed</strong> in any domain, you need perseverance and can only happen if you have first made it heartfelt,long-term <strong>commitment</strong></p>
+          <h3>Caring</h3>
+          <p>Taking <strong>care</strong> of someone else forces us to learn about the proper ways to do something, whether it's preparing finances, or planning for the future. It also teaches important virtues such as patience, understanding and loyalty that benefit individuals in both their personal and professional lives.</p>
+          <h3>Compassion</h3>
+          <p>Having <strong>compassion</strong> gives me the ability to understand someone else's situation hence the desire to improve their <strong>lives</strong>. This drives me to do what is necessary to make <em>Africa </em>and the world at large a better place</p>
+          
+        </div>
+       
+        
+      </article>
+      <aside class="aside">
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://http-3-235-31-63.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </aside>
     </main>
-    <script src="./js/index.js"></script>
+    <footer>
+      Made by Cynthia Gaitho for
+      <a href="https://alx-apply.hbtn.io" target="_blank">Kiriri Universitys</a>.
+    </footer>
   </body>
 </html>

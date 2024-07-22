@@ -1,7 +1,12 @@
-
-const clickMeButton = document.getElementById("click-me")
-
-
-clickMeButton.addEventListener('click',function(){
-    alert("Hello world!")
-})
+document.addEventListener("DOMContentLoaded", function (event) {
+    var thumbnailElement = document.getElementById("smart_thumbnail");
+    thumbnailElement.addEventListener("click", function () {
+      // write here
+  
+      if (thumbnailElement.className === "small") {
+        thumbnailElement.className = "";
+      } else {
+        thumbnailElement.className = "small";
+      }
+    });
+  });
